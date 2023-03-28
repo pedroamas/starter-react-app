@@ -1,8 +1,7 @@
 {
   "name": "starter-react-app",
   "version": "0.1.0",
-  "homepage": "https://pedroamas.github.io/starter-react-app",
-  "private": true,
+  "homepage": "https://pedroamas.github.io/starter-react-app/",
   "scripts": {
     "start": "node server.js",
     "dev": "react-scripts start",
