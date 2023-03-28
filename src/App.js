@@ -19,9 +19,9 @@ function App(props) {
           <Header />
           <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/chess" element={<Chess />} />
-          <Route path="/minesweeper" element={<Minesweeper />} />
-          <Route path="/snake" element={<Snake />} />
+          <Route path="chess" element={<Chess />} />
+          <Route path="minesweeper" element={<Minesweeper />} />
+          <Route path="snake" element={<Snake />} />
 
           </Routes>
           <div className="push"></div>
