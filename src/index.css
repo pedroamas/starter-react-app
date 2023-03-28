@@ -1,13 +1,238 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.big-checkbox > input {width: 20px; height: 20px;}
+.task-label{
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn{
+    width: 150px;
+}
+
+.separe-margin{
+    margin-top: 30px;
+}
+
+.separe-padding {
+    padding-top: 30px ;
+    background-color: #CFD8DC;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    position: fixed;
+}
+
+.push {
+    height: 60px
+}
+.image {
+    max-height: 200px;
+}
+.centered {
+    text-align: center;
+}
+
+.card {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+video {
+    width: 100%;
+    height: 50vh;
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    line-height: 0;
+    text-align: center;
+    border-top: grey;
+    border-bottom: grey;
+    border-left: grey;
+    border-right: grey;
+    border-color: grey;
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    border-style: solid;
+}
+.box:hover {
+    cursor: context-menu;
+}
+
+.hiddenBox {
+    background-color: burlywood;
+    color: transparent;
+    border-style: solid;
+    border-color: grey;
+    
+}
+
+.flag {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/825/825205.png") ;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: navajowhite;
+    color: transparent;
+}
+
+.question {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25333.png") ;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFFF99;
+    color: transparent;
+}
+
+
+.bomb {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/978/978674.png") ;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+    color: transparent;
+}
+
+.mistake {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828665.png") ;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    color: transparent;
+}
+.background-green {
+    background-color: #28a745;
+    color: white;
+}
+
+.tableSnake {
+  border-top: black;
+  border-bottom: black;
+  border-left: black;
+  border-right: black;
+    border-style: solid;
+}
+
+.tableSnake td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.snakeBox {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-style: none;
+    box-sizing: content-box;
+    border-spacing: 0px;
+}
+.snakeImg::after::before{
+    box-sizing: content-box;
+}
+.snakeImg {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+}
+
+.right {
+    transform: rotate(0deg);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.left {
+    transform: rotate(180deg);
+}
+
+.up {
+    transform: rotate(-90deg);
+}
+.right-down {
+    transform: rotate(0deg);
+}
+.down-left {
+    transform: rotate(90deg);
+}
+.left-up {
+    transform: rotate(180deg);
+}
+.up-right {
+    transform: rotate(-90deg);
+}
+
+.down-right {
+    transform: rotate(0deg);
+}
+.left-down {
+    transform: rotate(90deg);
+}
+.up-left {
+    transform: rotate(180deg);
+}
+.right-up {
+    transform: rotate(-90deg);
+}
+
+
+.colFreecell {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+.paddCard {
+    margin-top: -120px;
+    
+}
+
+.viewCard {
+    z-index: 100;
+}
+.cardRow {
+    position: relative;
+}
+.cardRow img {
+    -webkit-transition: all 3.5s ease-in-out;
+    -moz-transition: all 3.5s ease-in-out;
+    -ms-transition: all 3.5s ease-in-out;
+    -o-transition: all 3.5s ease-in-out;
+    transition: all 3.5s ease-in-out; 
+}
+  
+
+.headerFreecell {
+    height: 160px;
+}
+.slot {
+    float: left;
+    width: 130px;
+    height: 120px;
+}
+.stack {
+    float: left;
+    width: 130px;
+    height: 120px;
 }
