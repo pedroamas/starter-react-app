@@ -17,8 +17,8 @@ function App(props) {
   return (
      <Router>
           <Header />
-          <Routes>
-          
+          <Routes location={'https://frail-lamb-tunic.cyclic.app/'}>
+          <Route path="/" element={<Home />} />
           <Route path="chess" element={<Chess />} />
           <Route path="minesweeper" element={<Minesweeper />} />
           <Route path="snake" element={<Snake />} />
