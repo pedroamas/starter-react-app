@@ -18,7 +18,7 @@ function App(props) {
      <Router>
           <Header />
           <Routes>
-          <Route path="/" element={<Home />} />
+          
           <Route path="chess" element={<Chess />} />
           <Route path="minesweeper" element={<Minesweeper />} />
           <Route path="snake" element={<Snake />} />
