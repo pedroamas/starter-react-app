@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Chess from "./pages/Chess"
@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 function App(props) {
   
   return (
-     <Router>
+    <HashRouter >
           <Header />
           <Routes>
           <Route path="/" element={<Home />} />
@@ -27,9 +27,8 @@ function App(props) {
           <div className="push"></div>
         <Footer/>
         
-      </Router> 
       
-      
+    </HashRouter>
   );
 
 }
